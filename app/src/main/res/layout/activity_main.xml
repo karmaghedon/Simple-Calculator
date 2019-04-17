@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/dataEntry"
+            android:text="Enter a Number"
+            style="@style/textView" />
+
+        <TextView
+            android:id="@+id/dataDisplay"
+            android:text="0"
+            style="@style/textView.two" />/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray">
+
+        <Button
+            android:id="@+id/btn_Memory4"
+            style="@style/style_calc_button.topLine.mem"
+            android:onClick="onClickMemory"
+            android:text="@string/MemoryClear" />
+
+        <Button
+            android:id="@+id/btn_Memory1"
+            style="@style/style_calc_button.topLine.mem"
+            android:onClick="onClickMemory"
+            android:text="@string/AdDMEM" />
+        <Button
+            android:id="@+id/btn_Memory2"
+            style="@style/style_calc_button.topLine.mem"
+            android:onClick="onClickMemory"
+            android:text="@string/SubstractMEM" />
+        <Button
+            android:id="@+id/btn_Memory3"
+            style="@style/style_calc_button.topLine.mem"
+            android:onClick="onClickMemory"
+            android:text="@string/Memory" />
+
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray">
+
+            <Button
+                android:id="@+id/btn_clear"
+                style="@style/style_calc_button.topLine"
+                android:onClick="onClickClear"
+                android:text="@string/Clear" />
+
+            <Button
+                android:id="@+id/btn_plusMinus"
+                style="@style/style_calc_button.topLine"
+                android:onClick="onClickOperation"
+                android:text="@string/plusMinus" />
+
+            <Button
+                android:id="@+id/btn_modulo"
+                style="@style/style_calc_button.topLine"
+                android:onClick="onClickOperation"
+                android:text="@string/modulo" />
+
+            <Button
+                android:id="@+id/btn_dev"
+                style="@style/style_calc_button.oper_btn"
+                android:onClick="onClickOperation"
+                android:text="@string/Division" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray">
+
+            <Button
+                android:id="@+id/btn_num7"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_7"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_7"/>
+
+            <Button
+                android:id="@+id/btn_num8"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_8"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_8"/>
+
+            <Button
+                android:id="@+id/btn_num9"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_9"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_9"/>
+
+            <Button
+                android:id="@+id/btn_mut"
+                style="@style/style_calc_button.oper_btn"
+                android:onClick="onClickOperation"
+                android:text="@string/multiplicationSign" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray">
+
+            <Button
+                android:id="@+id/btn_num4"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_4"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_4"/>
+
+            <Button
+                android:id="@+id/btn_num5"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_5"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_5"/>
+
+            <Button
+                android:id="@+id/btn_num6"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_6"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_6"/>
+
+            <Button
+                android:id="@+id/btn_min"
+                style="@style/style_calc_button.oper_btn"
+                android:onClick="onClickOperation"
+                android:text="@string/minus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray">
+
+            <Button
+                android:id="@+id/btn_num1"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_1"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_1"/>
+
+            <Button
+                android:id="@+id/btn_num2"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_2"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_2"/>
+
+            <Button
+                android:id="@+id/btn_num3"
+                style="@style/style_calc_button"
+                android:text="@string/s_number_3"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_3"/>
+
+            <Button
+                android:id="@+id/btn_add"
+                style="@style/style_calc_button.oper_btn"
+                android:onClick="onClickOperation"
+                android:text="@string/Add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray">
+
+            <Button
+                android:id="@+id/btn_num0"
+                style="@style/style_calc_button"
+                android:layout_weight="2"
+                android:text="@string/s_number_0"
+                android:onClick="onClickNumber"
+                android:tag="@string/s_number_0"/>
+
+            <Button
+                android:id="@+id/btn_decim"
+                style="@style/style_calc_button"
+                android:text="@string/decimal"
+                android:onClick="onClickNumber"
+                android:tag="@string/decimal"/>
+
+            <Button
+                android:id="@+id/btn_eql"
+                style="@style/style_calc_button.oper_btn"
+                android:onClick="onClickOperation"
+                android:text="@string/equal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
